@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .arrow {
+        font: normal normal normal 26px/28px Material-Design-Iconic-Font;
+        letter-spacing: 0.65px;
+        color: #1f7a54;
+        opacity: 1;
+      }
+
+      body {
+        background: #eeeeee 0% 0% no-repeat padding-box;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 600;
+      }
+      .heading {
+        padding-top: 2.9%;
+        width: 236px;
+        height: 50px;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #222222;
+        opacity: 1;
+      }
+      .borderline {
+        float: center;
+        top: 108px;
+        left: 60px;
+        width: 480px;
+        height: 4px;
+        background: #3ac7ec 0% 0% no-repeat padding-box;
+        border-radius: 2px 2px 0px 0px;
+        opacity: 1;
+      }
+      .state {
+        border: none;
+        border-bottom: solid #eeeeee 1px;
+      }
+      .districtt {
+        border: none;
+        border-bottom: solid #eeeeee 1px;
+      }
+      .form {
+        width: 488px;
+        height: 584px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #ffffff;
+        opacity: 1;
+      }
+      .form-check-input::after {
+        color: #fff;
+        background-color: #fff;
+        border-color: #fff;
+      }
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="border-bottom: solid 2px #31b9e4"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          style="font-family: 'Open Sans', sans-serif"
+          href="#"
+          >Quantum</a
+        >
+      </div>
+    </nav>
+    <div
+      class="container mt-5"
+      style="
+        width: 488px;
+        height: 584px;
+        background-color: #ffffff;
+        opacity: 100%;
+        padding-left: 0px;
+      "
+    >
+      <form class="form" role="form">
+        <div class="row mx-0">
+          <div class="col borderline"></div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-2 arrow mt-3 mx-3">
+            <i
+              class="bi bi-arrow-left"
+              style="width: 17px; min-height: 26px; color: #1f7a54"
+            ></i>
+          </div>
+          <div
+            class="col-md heading"
+            style="
+              padding-right: 25%;
+              font-weight: bold;
+              font-family: 'Quicksand', sans-serif;
+            "
+          >
+            <span style="float: center"> Log in With Quantum </span>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="container-fluid px-5">
+            <input
+              class="form-check-input"
+              name="schooltype"
+              id="district"
+              type="radio"
+              style="border-color: #1f7a54; background-color: #1f7a54"
+              checked
+            />
+            <label for="district" style="margin-right: 20px">District</label>
+
+            <input
+              class="form-check-input"
+              id="School"
+              name="schooltype"
+              type="radio"
+              style="border-color: #1f7a54; background-color: #ffffff"
+            />
+            <label for="School">Independent School</label>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 25px">
+          <div class="col form-floating mx-4">
+            <select
+              id="state"
+              style="font-weight: bold"
+              class="form-select state"
+              aria-label="Default select example"
+            >
+              <option selected>Alabama</option>
+              <option value="1">Texas</option>
+            </select>
+            <label for="state" style="font-size: 12px; margin-left: 10px"
+              >State*</label
+            >
+          </div>
+        </div>
+        <div class="row" style="margin-top: 36px">
+          <div class="col form-floating mx-4">
+            <select
+              id="districtt"
+              style="font-weight: bold"
+              class="form-select districtt"
+              aria-label="Default select example"
+            >
+              <option selected>Alabama School District</option>
+              <option value="1">Texas School District</option>
+            </select>
+            <label for="districtt" style="font-size: 12px; margin-left: 10px"
+              >District*</label
+            >
+          </div>
+        </div>
+        <div class="row" style="margin-top: 46px">
+          <div class="col-md-12 px-5">
+            <input
+              style="
+                width: 100%;
+                border: none;
+                border-bottom: solid #eee 1px;
+                font-weight: 900;
+              "
+              type="text"
+              placeholder="Username/Email ID*"
+            />
+            <p
+              style="
+                font-size: 14px;
+                float: right;
+                margin-top: 5px;
+                color: #1f7a54;
+              "
+            >
+              Forgot Username?
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 10px">
+          <div class="col-md-12 px-5 form-group has-success has-feedback">
+            <input id="pwd"  style="width: 100%;
+                border: none;border-bottom: solid #eee 1px;
+                font-weight: 900;"
+              class="form-control"
+              type="text"
+              placeholder="Password*"
+            />
+            <i style="color: #222222; z-index: 10;" class="fas fa-eye"></i>
+            <p
+              style="
+                font-size: 14px;
+                float: right;
+                margin-top: 5px;
+                color: #1f7a54;
+              "
+            >
+              Forgot Password?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mx-4">
+            <input style="size: 24px;" type="checkbox" value="True">
+            Remember me
+          </div>
+         
+        </div>
+        <div class="row" style="">
+          <div class="col text-center" style="padding-top: 14px;">
+<button type="button" class="btn " style="width: 216px;
+height: 40px;  background: #3FD28B 0% 0% no-repeat padding-box; border-radius: 0%; 
+box-shadow: 0px 3px 5px #0000003D;"><span style="font-size: 14px;">LOG IN</span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
