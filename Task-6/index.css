@@ -12,21 +12,27 @@
 }
 .header{
  grid-area: h;   
+ background:linear-gradient(#7057DA,#7961DC,#8A76E1);	
 }
 .sidebar{
     grid-area: s;
+    background: linear-gradient(#3AD5CD,#35C5BD,#2AA8A1);
 }
 .content1{
-    grid-area: c1
+    grid-area: c1;
+    background:linear-gradient(#5F60DE,#437FEB,#299DF7);
 }
 .content2{
-    grid-area: c2
+    grid-area: c2;
+    background: linear-gradient(#5F62E0,#497BE9,#3294F3);
 }
 .content3{
-    grid-area: c3
+    grid-area: c3;
+    background: linear-gradient(#615FDF,#487BEA,#3393F3);
 }
 .footer{
     grid-area: f;
+    background: linear-gradient(#7057DA,#7A62DC,#8975E1);
 }
 .container > div {
     
@@ -34,13 +40,13 @@
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    color: #ffeead;
+    color: #ffffff;
 }
 
 html, body {
     width: 80%;
     box-sizing: border-box;
-    background-color: #ffeead;
+    background-color: #ffffff;
     
     height: 90%;
     padding: 10px;
