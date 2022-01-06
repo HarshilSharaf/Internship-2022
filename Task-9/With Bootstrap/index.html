@@ -35,15 +35,65 @@
       rel="stylesheet"
     />
     <style>
+      .form-container{
+        width: 488px;
+      height: fit-content;
+      }
+      .form {
+        width: 488px;
+        height: max-content;
+        padding-bottom: 20px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #ffffff;
+        opacity: 1;
+      }
+      @media only screen and  (max-width : 480px)  {
+        .form-container{
+        width: 388px;
+        
+        }
+      }
+      @media only screen and (max-width:509px){
+        html,body{
+          min-width: 100%;
+        }
+        nav{
+          min-width: 100%;
+          overflow: auto;
+        }
+        .form-container{
+          max-width: 300px;
+        }
+        .form{
+          width: auto;
+        }
+      }
+
+      @media only screen and (max-width:300px) {
+        .form-container{
+          width: 250px;
+        }
+        .borderline{
+          width: 100%;
+        }
+      }
+      a{
+        text-decoration: none;
+        color: #1f7a54;
+      }
       .arrow {
         font: normal normal normal 26px/28px Material-Design-Iconic-Font;
         letter-spacing: 0.65px;
         color: #1f7a54;
         opacity: 1;
       }
-
+      html{
+        display: block;
+        width: auto;
+      }
       body {
-        background: #eeeeee 0% 0% no-repeat padding-box;
+        
+        background: #eeeeee 0% 0% ;
         font-family: "Quicksand", sans-serif;
         font-weight: 600;
       }
@@ -74,13 +124,7 @@
         border: none;
         border-bottom: solid #eeeeee 1px;
       }
-      .form {
-        width: 488px;
-        height: 584px;
-        background: #ffffff 0% 0% no-repeat padding-box;
-        border: 1px solid #ffffff;
-        opacity: 1;
-      }
+      
       .form-check-input::after {
         color: #fff;
         background-color: #fff;
@@ -91,10 +135,10 @@
   </head>
   <body>
     <nav
-      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      class="navbar  navbar-dark bg-dark"
       style="border-bottom: solid 2px #31b9e4"
     >
-      <div class="container-fluid">
+      <div class="container-fluid" style="width: 100%;">
         <a
           class="navbar-brand"
           style="font-family: 'Open Sans', sans-serif"
@@ -104,10 +148,9 @@
       </div>
     </nav>
     <div
-      class="container mt-5"
+      class="container-fluid form-container mt-2"
       style="
-        width: 488px;
-        height: 584px;
+   
         background-color: #ffffff;
         opacity: 100%;
         padding-left: 0px;
@@ -118,14 +161,14 @@
           <div class="col borderline"></div>
         </div>
         <div class="row mt-3">
-          <div class="col-md-2 arrow mt-3 mx-3">
+          <div class="col-md-2 col-sm-2  col-2 arrow mt-3 mx-3">
             <i
               class="bi bi-arrow-left"
               style="width: 17px; min-height: 26px; color: #1f7a54"
             ></i>
           </div>
           <div
-            class="col-md heading"
+            class="col-md col-sm col heading"
             style="
               padding-right: 25%;
               font-weight: bold;
@@ -191,14 +234,13 @@
           </div>
         </div>
         <div class="row" style="margin-top: 46px">
-          <div class="col-md-12 px-5">
+          <div class="col-md-12 "  style="padding-left: 44px; padding-right: 40px;">
             <input
               style="
                 width: 100%;
                 border: none;
                 border-bottom: solid #eee 1px;
-                font-weight: 900;
-              "
+                font-weight: 900;"
               type="text"
               placeholder="Username/Email ID*"
             />
@@ -209,21 +251,27 @@
                 margin-top: 5px;
                 color: #1f7a54;
               "
-            >
-              Forgot Username?
+            > 
+            <a href="" style="margin-left: 61px; float: right;">
+              Forgot Username?</a>
             </p>
           </div>
         </div>
         <div class="row" style="margin-top: 10px">
-          <div class="col-md-12 px-5 form-group has-success has-feedback">
-            <input id="pwd"  style="width: 100%;
-                border: none;border-bottom: solid #eee 1px;
-                font-weight: 900;"
+          <div class="col-md-12  form-group has-success has-feedback" style="padding-left: 40px; padding-right: 40px;">
+            <input
+              id="pwd"
+              style="
+                width: 100%;
+                border: none;
+                border-bottom: solid #eee 1px;
+                font-weight: 900;
+              "
               class="form-control"
               type="text"
               placeholder="Password*"
             />
-            <i style="color: #222222; z-index: 10;" class="fas fa-eye"></i>
+            <i style="color: #222222; z-index: 10" class="fas fa-eye"></i>
             <p
               style="
                 font-size: 14px;
@@ -232,25 +280,53 @@
                 color: #1f7a54;
               "
             >
-              Forgot Password?
+              <a href="">Forgot Password?</a> 
             </p>
           </div>
         </div>
         <div class="row">
           <div class="col mx-4">
-            <input style="size: 24px;" type="checkbox" value="True">
+            <input style="size: 24px" type="checkbox" value="True" />
             Remember me
           </div>
-         
         </div>
-        <div class="row" style="">
-          <div class="col text-center" style="padding-top: 14px;">
-<button type="button" class="btn " style="width: 216px;
-height: 40px;  background: #3FD28B 0% 0% no-repeat padding-box; border-radius: 0%; 
-box-shadow: 0px 3px 5px #0000003D;"><span style="font-size: 14px;">LOG IN</span></button>
+        <div class="row mt-sm-2" >
+          <div class="col text-center" style="padding-top: 14px">
+            <button
+              type="button"
+              class="btn"
+              style="
+                width: 216px;
+                height: 40px;
+                background: #3fd28b 0% 0% no-repeat padding-box;
+                border-radius: 0%;
+                box-shadow: 0px 3px 5px #0000003d;
+              "
+            >
+              <span style="font-size: 14px">LOG IN</span>
+            </button>
           </div>
         </div>
       </form>
     </div>
+    <div class="container mt-3 mb-5 text-center"><a href="" style="color: black;">About US</a>  | <a style="color: black;" href=""> Contact Us</a> </div>
+    <footer
+      class="fixed-bottom"
+      style="background: #e0e1e1 0% 0% no-repeat padding-box"
+    >
+      <div class="d-flex justify-content-center">
+        <div class="p-2">Quantum</div>
+        <div class="p-2">|</div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          Copyright © 2020-2021
+        </div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          Zeus Systems Pvt. Ltd.
+        </div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
