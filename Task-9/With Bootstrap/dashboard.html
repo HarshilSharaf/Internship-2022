@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-dark bg-dark"
+     
+    >
+      <div class="row" style="width: 100%">
+        <div class="col-6 col-sm-2 col-md-3 col-lg-6">
+          <i style="color: #edc900; font-size: 19px;" class="px-2 fas fa-lightbulb"></i>
+          <a
+            class="navbar-brand"
+            style="font-family: 'Open Sans', sans-serif"
+            href="#"
+            >Quantum</a
+          >
+        </div>
+        <!-- <div class="col mx-2"></div> -->
+        <div class="absolutediv col-sm-10 col-md-6 col-lg-6">
+          <div class="row">
+            <div class="col-md mx-2" style="border-bottom: solid white 4px;"><a href="">DASHBOARD</a></div>
+            <div class="col-md mx-2"><a href="">Content</a></div>
+            <div class="col-md mx-2"><a href="">USERS</a></div>
+            <div class="col-md mx-2"><a href="">REPORTS</a></div>
+
+            <div class="col-md mx-2"><a href="">ADMIN</a></div>
+            <!-- Notification icon -->
+            <div class="col-md" style="margin-left: 40px">
+              <a href=""class="fas fa-bell">
+                <i class="fas fa-circle circle1"></i>
+                <span class="num1">2</span>
+              </a>
+            </div>
+            <!-- Brodacasting icon -->
+            <div class="col mx-2">
+              <a href=""class="fas fa-bullhorn">
+                <i class="fas fa-circle circle"></i>
+                <span class="num">2</span>
+              </a>
+            </div>
+            <!-- Image For Profile -->
+            <div class="col mx-2"><img id="profile" src="dp.jpg" /></div>
+          </div>
+          
+        </div>
+        
+      
+      
+        <div class="col-6 col-sm-10 col-md-12 col-lg-12 d-flex justify-content-end">
+          <div class="secondary ">      <!-- Notification icon -->
+            <div class="col-md" style="margin-left: 40px">
+              <a href=""class="fas fa-bell">
+                <i class="fas fa-circle circle1"></i>
+                <span class="num1">2</span>
+              </a>
+            </div>
+            <!-- Brodacasting icon -->
+            <div class="col mx-2">
+              <a href=""class="fas fa-bullhorn">
+                <i class="fas fa-circle circle"></i>
+                <span class="num">2</span>
+              </a>
+            </div>
+            <!-- Image For Profile -->
+            <div class="col mx-2"><img id="profile" src="dp.jpg" /></div>
+          </div>
+          <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="container-fluid form-container mt-2"
+      style="
+        background-color: #ffffff;
+        opacity: 100%;
+        padding-left: 0px;
+        
+      "
+    >
+      <div class="row text-center pt-2" style="background-color: #8ddc97">
+        <div class="col" style=" border-bottom: solid 4px black">
+          <i class="fas fa-book"
+            ><span >
+              4 Courses</span
+            >
+          </i>
+        </div>
+
+        <div class="col"><i class="fas fa-user-friends"> <span> 4 Classes</span> </i></div>
+      </div>
+      <div
+        class="row"
+        style="
+          background-color: #eeeeee;
+          border: none;
+          border-bottom: #000000 1px;
+        "
+      >
+        <div class="col-7 col-sm-9 my-3">
+          <span style="color: #686868; font-size: 12px">
+            Showing 4 of 4 courses
+          </span>
+        </div>
+        <div class="col col-sm my-3 d-flex justify-content-end">
+          <span style="color: #686868; font-size: 12px">Sort By:</span>
+          <select
+            id="state"
+            style="
+              font-weight: bold;
+              height: 80%;
+              border: none;
+              border-bottom: #686868 solid 0.5px;
+            "
+            class="form-select state"
+            aria-label="Default select example"
+          >
+            <option selected><span>Course Name</span></option>
+            <option value="1">Texas</option>
+          </select>
+          <i class="fas fa-arrow-up m-2" style="color: #1f7a54"></i>
+        </div>
+        
+      <hr >
+      </div>
+      <div class="row card-container" style=" background-color: #eeeeee">
+        <!-- Card-1 -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-2 mr-2 px-4">
+          <div class="card cards" >
+            <div class="card-horizontal">
+              <div class="img-square-wrapper m-3">
+                <img
+                  class=""
+                  width="132px"
+                  height="157px"
+                  src="https://cdn.pixabay.com/photo/2018/05/08/08/44/artificial-intelligence-3382507_960_720.jpg"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <span style="font-size: 16px; font-weight: 800"
+                      >Acceleration
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span style="float: right">
+                      <i style="color: #edc900" class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="row" style="margin-bottom: 0px">
+                  <p style="font-size: 12px; color: #686868">
+                    Physics &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; Grade 7
+                    <span style="color: #1f7a54">+2</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <span style="font-size: 12px">
+                    <b>4</b> Units <b>18</b> Lessons <b>24</b> Topics
+                  </span>
+                </div>
+                <div class="row mt-2" style="font-size: 14px">
+                  <select
+                    style="
+                      border: none;
+                      width: 264px;
+                      border-bottom: solid 1px black;
+                    "
+                  >
+                    <option>Mr.Frank's Class</option>
+                    <option>All classes</option>
+                  </select>
+                </div>
+                <div class="row mt-2">
+                  <span style="font-size: 10px; color: #686868"
+                    >50 students &nbsp;&nbsp; | &nbsp;&nbsp;21-Jan-2020 -
+                    21-Aug-2020</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-footer" style="background-color: #ffffff">
+              <div class="d-flex" style="justify-content: space-between">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-calendar-day"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-chart-bar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mr-2 px-4">
+          <div class="card cards" >
+            <div class="card-horizontal">
+              <div class="img-square-wrapper m-3">
+                <img
+                  class=""
+                  width="132px"
+                  height="157px"
+                  src="https://images.unsplash.com/photo-1534744971734-e1628d37ea01?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <span style="font-size: 16px; font-weight: 800"
+                      >Displacement, Velocity and Speed
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span style="float: right">
+                      <i style="color: #edc900" class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="row" style="margin-bottom: 0px">
+                  <p style="font-size: 12px; color: #686868">
+                    Physics &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; Grade 7
+                    <span style="color: #1f7a54">+2</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <span style="font-size: 12px">
+                    <b>4</b> Units <b>18</b> Lessons <b>24</b> Topics
+                  </span>
+                </div>
+                <div class="row mt-2" style="font-size: 14px">
+                  <select
+                    style="
+                    color: #616161;
+                      border: none;
+                      width: 264px;
+                      border-bottom: solid 1px black;
+                    "
+                  >
+                    <option><span style="color: #616161;">No Classes</span> </option>
+                    <option>All classes</option>
+                  </select>
+                </div>
+               
+              </div>
+            </div>
+            <div class="card-footer" style="background-color: #ffffff">
+              <div class="d-flex" style="justify-content: space-between">
+                <i class="fas fa-eye"></i>
+                <i style="color: #616161;" class="fas fa-calendar-day"></i>
+                <i style="color: #616161;" class="fas fa-shopping-bag"></i>
+                <i class="fas fa-chart-bar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-2 card-container" style="background-color: #eeeeee">
+        <!-- Card-3 -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-2 mr-2 px-4">
+          <div class="card cards" >
+            <div class="card-horizontal">
+              <div class="img-square-wrapper m-3">
+                <img
+                  class=""
+                  width="132px"
+                  height="157px"
+                  src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <span style="font-size: 16px; font-weight: 800"
+                      >Introduction to Biology: Micro organisms
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span style="float: right">
+                      <i style="color: #edc900" class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="row" style="margin-bottom: 0px">
+                  <p style="font-size: 12px; color: #686868">
+                    Biology &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; Grade 7
+                    <span style="color: #1f7a54">+2</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <span style="font-size: 12px">
+                    <b>4</b> Units <b>18</b> Lessons <b>24</b> Topics
+                  </span>
+                </div>
+                <div class="row mt-2" style="font-size: 14px">
+                  <select
+                    style="
+                      border: none;
+                      width: 264px;
+                      border-bottom: solid 1px black;
+                    "
+                  >
+                    <option>Mr.Frank's Class</option>
+                    <option selected>All classes</option>
+                  </select>
+                </div>
+                <div class="row mt-2">
+                  <span style="font-size: 10px; color: #686868"
+                    >300 students</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-footer" style="background-color: #ffffff">
+              <div class="d-flex" style="justify-content: space-between">
+                <i  class="fas fa-eye"></i>
+                <i style="color: #616161;" class="fas fa-calendar-day"></i>
+                <i style="color: #616161;" class="fas fa-shopping-bag"></i>
+                <i class="fas fa-chart-bar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card-4 -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mr-2 px-4">
+          <div class="card cards" >
+            <div
+              class="justify-content-center d-flex"
+              role="alert"
+              style="
+                background-color: #ffe4e6;
+                margin: 0px;
+                width: 52px;
+                height: 15px;
+              "
+            >
+              <span style="font-size: 10px; color: #d80000; font-weight: bold"
+                >EXPIRED</span
+              >
+            </div>
+            <div class="card-horizontal">
+              <div class="img-square-wrapper m-3">
+                <img
+                  class=""
+                  width="132px"
+                  height="157px"
+                  src="https://media.istockphoto.com/photos/different-amoebas-on-abstract-background-picture-id509304796?k=20&m=509304796&s=612x612&w=0&h=uxN6Jt2lVkPRJkas7ZtsixBhb8zZ32kGKtGfejjZjXI="
+                  alt="Card image cap"
+                />
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-10">
+                    <span style="font-size: 16px; font-weight: 800"
+                      >Introduction to High School Mathematics
+                    </span>
+                  </div>
+                  <div class="col-2">
+                    <span style="float: right">
+                      <i style="color: #edc900" class="fas fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+                <div class="row" style="margin-bottom: 0px">
+                  <p style="font-size: 12px; color: #686868">
+                    Mathematics &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp; Grade 7
+                    <span style="color: #1f7a54">+2</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <span style="font-size: 12px">
+                    <b>4</b> Units <b>18</b> Lessons <b>24</b> Topics
+                  </span>
+                </div>
+                <div class="row mt-2" style="font-size: 14px">
+                  <select
+                    style="
+                      border: none;
+                      width: 264px;
+                      border-bottom: solid 1px black;
+                    "
+                  >
+                    <option>Mr.Frank's Class A</option>
+                    <option>All classes</option>
+                  </select>
+                </div>
+                <div class="row mt-2">
+                  <span style="font-size: 10px; color: #686868"
+                    >50 students &nbsp;&nbsp; | &nbsp;&nbsp;21-Jan-2020 -
+                    21-Aug-2020</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card-footer" style="background-color: #ffffff">
+              <div class="d-flex" style="justify-content: space-between">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-calendar-day"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-chart-bar"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3 mb-5 text-center"><a href="" style="color: #1F7A54;">About US</a>  | <a style="color: #1F7A54;" href=""> Contact Us</a> </div>
+    <footer
+      class="fixed-bottom"
+      style="background: #e0e1e1 0% 0% no-repeat padding-box"
+    >
+      <div class="d-flex justify-content-center">
+        <i style="color: #edc900;" class="p-2  fas fa-lightbulb"></i>
+        <div class="p-2">Quantum</div>
+        <div class="p-2">|</div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          Copyright © 2020-2021
+        </div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          Zeus Systems Pvt. Ltd.
+        </div>
+        <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
+          All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

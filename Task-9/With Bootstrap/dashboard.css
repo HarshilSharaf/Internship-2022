@@ -1,0 +1,144 @@
+* {
+    font-family: "Quicksand", sans-serif;
+  }
+  body {
+    background-color: #eeeeee;
+  }
+  .burger {
+    display: none;
+    grid-area: burger;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    /* border: 1px solid #3fd28b; */
+    padding: 5px;
+  }
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #3fd28b;
+  }
+  #profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-color: white;
+  }
+  a {
+    text-decoration: none;
+    color: #3fd28b;
+  }
+  .form-container {
+    width: fit-content;
+    height: fit-content;
+  }
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  div.card-container i{
+    color: #1F7A54;
+  }
+  #state {
+    font-size: 11px;
+    background-color: #eeeeee;
+  }
+  a.fa-bullhorn,a.fa-bell{
+      position: relative;
+      
+    }
+
+i.circle1{
+    position: absolute;
+font-size: 14px;
+top: -8px;
+left: 6px;
+right: 2px;
+color: #2A7FF3;
+   
+
+}
+    i.circle{
+        position: absolute;
+    font-size: 14px;
+    top: -8px;
+    left: 15px;
+    right: 2px;
+    color: #2A7FF3;
+       
+
+    }
+
+    span.num1 {
+        position: absolute;
+        font-size: 12px;
+        top: -8px;
+        left: 10px;
+        color: #fff;
+        right: 2px;
+        
+      }
+  span.num {
+    position: absolute;
+    font-size: 12px;
+    top: -8px;
+    left: 18px;
+    color: #fff;
+    right: 2px;
+    
+  }
+  .cards{
+    width: 476px;
+  }
+  .primary{
+      
+  }
+.secondary{
+    display: none ;
+}
+  @media screen and (max-width: 891px) {
+     .secondary{
+         display: flex;
+     }
+    .burger {
+        display: grid;
+      }
+    .absolutediv{
+        display: none;
+    }
+    .icons{
+        display: grid;
+    }
+  }
+  @media only screen  and (min-width:768px) and (max-width:992px){
+      .form-container{
+          width: 600px;
+
+      }
+      .card-container{
+          padding-left: 40px;
+      }
+  }
+  @media only screen  and (min-width:581px) and (max-width:768px) {
+    .form-container{
+        width: 600px;
+
+    }
+    .card-container{
+        padding-left: 40px;
+    }
+}
+
+
+  @media only screen  and (max-width:580px) {
+      
+    .form-container{
+        width: 500px;
+
+    }
+    .card-container{
+        -right: 40px;
+    }
+    
+}
+
