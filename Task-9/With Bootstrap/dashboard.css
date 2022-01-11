@@ -127,7 +127,7 @@ span.num3{
   overflow-x: hidden;
 }
 .fixed {
-  position: fixed;
+  position: sticky;
   background: #fff;
   z-index: 10;
   top:490px;
@@ -135,7 +135,7 @@ span.num3{
   width: 308px;
 }
 .fixed2 {
-  position: fixed;
+  position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
   top:500px;
@@ -144,7 +144,7 @@ span.num3{
 }
 
 .fixed3 {
-  position: fixed;
+  position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
   top:475px;
@@ -152,7 +152,7 @@ span.num3{
  width: 308px;
 }
 .fixed4 {
-  position: fixed;
+  position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
   top:475px;
@@ -194,6 +194,8 @@ span.num3{
 .menu:hover .dropdown-content-menu,.dropdown-menu  {display: block;}
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown-item,.dropdown-submenu {font-weight: 800; color: #1F7A54;}
+
+
   @media screen and (max-width: 891px) {
      .secondary{
          display: flex;
@@ -209,6 +211,7 @@ span.num3{
     }
   }
   @media only screen  and (min-width:768px) and (max-width:992px){
+
       .form-container{
           width: 600px;
 
