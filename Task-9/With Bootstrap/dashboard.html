@@ -39,16 +39,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
       rel="stylesheet"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
-    <nav
-      class="navbar navbar-dark bg-dark"
-     
-    >
+    <nav class="navbar navbar-dark bg-dark">
       <div class="row" style="width: 100%">
         <div class="col-6 col-sm-2 col-md-3 col-lg-6">
-          <i style="color: #edc900; font-size: 19px;" class="px-2 fas fa-lightbulb"></i>
+          <i
+            style="color: #edc900; font-size: 19px"
+            class="px-2 fas fa-lightbulb"
+          ></i>
           <a
             class="navbar-brand"
             style="font-family: 'Open Sans', sans-serif"
@@ -59,56 +61,505 @@
         <!-- <div class="col mx-2"></div> -->
         <div class="absolutediv col-sm-10 col-md-6 col-lg-6">
           <div class="row">
-            <div class="col-md mx-2" style="border-bottom: solid white 4px;"><a href="">DASHBOARD</a></div>
+            <div class="col-md mx-2" style="border-bottom: solid white 4px">
+              <a href="">DASHBOARD</a>
+            </div>
             <div class="col-md mx-2"><a href="">Content</a></div>
             <div class="col-md mx-2"><a href="">USERS</a></div>
             <div class="col-md mx-2"><a href="">REPORTS</a></div>
 
             <div class="col-md mx-2"><a href="">ADMIN</a></div>
             <!-- Notification icon -->
-            <div class="col-md" style="margin-left: 40px">
-              <a href=""class="fas fa-bell">
+            <div class="col-md dropdown" style="margin-left: 40px">
+              <a href="#" class="fas fa-bell">
                 <i class="fas fa-circle circle1"></i>
                 <span class="num1">2</span>
               </a>
+              <div class="dropdown showme-wrap">
+                <div
+                  class="dropdown-content"
+                  style="border-bottom: solid 1px #616161"
+                >
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >License for Introduction to Algebra has been assigned
+                        to your school</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12" col-sm-12>
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Lesson 3 Practice Worksheet overdue for Amy
+                        Santiago</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-check-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12" style="font-size: 9px">
+                      <span style="font-size: 9px; color: #616161">
+                        Course</span
+                      >
+                      : Advanced Mathematics
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >23 new students created</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12" col-sm-12>
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >15 submissions ready for evaluation</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12" style="font-size: 9px">
+                      <span style="font-size: 9px; color: #616161"> Class</span>
+                      : Basics Of Algebra
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >License for Basic Concepts in Geometry has been
+                        assigned to your... school</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-check-circle" style="color: #1f7a54"></i>
+                    </div>
+
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row p-2 fixed2 text-center" style="color: #1f7a54;font-weight: 800;">
+                    <div class="col">
+                      SHOW ALL
+                    </div>
+                  </div> 
+                </div>
+              </div>
             </div>
             <!-- Brodacasting icon -->
-            <div class="col mx-2">
-              <a href=""class="fas fa-bullhorn">
+            <div class="col mx-2 dropdown">
+              <a href="" class="fas fa-bullhorn">
                 <i class="fas fa-circle circle"></i>
                 <span class="num">2</span>
               </a>
+              <div class="dropdown showme-wrap">
+                <div
+                  class="dropdown-content"
+                  style="border-bottom: solid 1px #616161"
+                >
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >No classes will be held on 21st Nov</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">2 files are attached</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Samson White</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Guest lecture on Geometry on 20th September</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">2 files are attached</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Additional course materials available on request</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">Course: Mathematics 101</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Additional course materials available on request</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">Course: Mathematics 101</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+               
+                  <div class="row p-2 fixed3 text-center" style="color: #1f7a54;font-weight: 800;">
+                    <div class="col">
+                      SHOW ALL
+                    </div>
+                    <div class="col" style="border-left: solid #616161 1px;">CREATE NEW</div>
+                  </div> 
+                </div>
+              </div>
             </div>
             <!-- Image For Profile -->
-            <div class="col mx-2"><img id="profile" src="dp.jpg" /></div>
+            <div class="col mx-2 img-container">
+              <img id="profile" src="dp.jpg" />
+              <i class="fas fa-circle circle3"></i>
+              <span class="num3">T</span>
+            </div>
           </div>
-          
         </div>
-        
-      
-      
-        <div class="col-6 col-sm-10 col-md-12 col-lg-12 d-flex justify-content-end">
-          <div class="secondary ">      <!-- Notification icon -->
-            <div class="col-md" style="margin-left: 40px">
-              <a href=""class="fas fa-bell">
+
+        <!-- After The Screen Size is small this menu will open -->
+        <div
+          class="col-6 col-sm-10 col-md-12 col-lg-12 d-flex justify-content-end"
+        >
+          <div class="secondary" id="secondmenu">
+            <!-- Notification icon -->
+            <div class="col-md dropdown" style="margin-top: 6px">
+              <a href="#" class="fas fa-bell">
                 <i class="fas fa-circle circle1"></i>
                 <span class="num1">2</span>
               </a>
+              <div class="dropdown showme-wrap">
+                <div
+                  class="dropdown-content"
+                  style="border-bottom: solid 1px #616161"
+                >
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >License for Introduction to Algebra has been assigned
+                        to your school</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12" col-sm-12>
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Lesson 3 Practice Worksheet overdue for Amy
+                        Santiago</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-check-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12" style="font-size: 9px">
+                      <span style="font-size: 9px; color: #616161">
+                        Course</span
+                      >
+                      : Advanced Mathematics
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >23 new students created</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12" col-sm-12>
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >15 submissions ready for evaluation</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12" style="font-size: 9px">
+                      <span style="font-size: 9px; color: #616161"> Class</span>
+                      : Basics Of Algebra
+                    </div>
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >License for Basic Concepts in Geometry has been
+                        assigned to your... school</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-check-circle" style="color: #1f7a54"></i>
+                    </div>
+
+                    <div class="col-12 col-sm-12">
+                      <span style="font-size: 9px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row p-3 fixed text-center">
+                    <div class="col" style="color: #1f7a54; font-weight: 700">
+                      SHOW ALL
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <!-- Brodacasting icon -->
-            <div class="col mx-2">
-              <a href=""class="fas fa-bullhorn">
+            <div class="col dropdown mx-2" style="margin-top: 6px; padding-left: 3px">
+              <a href="#" class="fas fa-bullhorn">
                 <i class="fas fa-circle circle"></i>
                 <span class="num">2</span>
               </a>
+              <div class="dropdown showme-wrap">
+                <div
+                  class="dropdown-content"
+                  style="border-bottom: solid 1px #616161"
+                >
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >No classes will be held on 21st Nov</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">2 files are attached</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Samson White</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Guest lecture on Geometry on 20th September</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">2 files are attached</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Additional course materials available on request</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">Course: Mathematics 101</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+                  <div class="row m-0">
+                    <div class="col"><hr /></div>
+                  </div>
+                  <div class="row p-2">
+                    <div class="col-10 col-sm-10" style="font-size: 9px; font-weight: 700;"><span style="color: #616161;"> PA</span>: Wilson Kumar</div>
+                    <div class="col-10 col-sm-10">
+                      <span style="font-size: 14px; font-weight: 800"
+                        >Additional course materials available on request</span
+                      >
+                    </div>
+                    <div class="col-1 col-sm-1">
+                      <i class="fa fa-minus-circle" style="color: #1f7a54"></i>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-2">
+                      <span style="font-size: 10px; color: #616161; float: left;">Course: Mathematics 101</span>
+                      <span style="font-size: 10px; color: #616161; float: right"
+                        >15-Sep-2018 at 07:21 pm</span
+                      >
+                    </div>
+                  </div>
+               
+                  <div class="row p-2 fixed4 text-center" style="color: #1f7a54;font-weight: 800;">
+                    <div class="col">
+                      SHOW ALL
+                    </div>
+                    <div class="col" style="border-left: solid #616161 1px;">CREATE NEW</div>
+                  </div> 
+                </div>
+              </div>
             </div>
             <!-- Image For Profile -->
-            <div class="col mx-2"><img id="profile" src="dp.jpg" /></div>
+            <div class="col mx-2 img-container">
+              <img id="profile" src="dp.jpg" />
+              <i class="fas fa-circle circle"></i>
+              <span class="num2">T</span>
+            </div>
           </div>
-          <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+          <div class="col-1 burger menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <div
+              class="dropdown-content-menu"
+              style="
+                border-bottom: solid 1px #616161;
+                color: #1f7a54;
+                font-weight: 800;
+              "
+            >
+             
+
+             
+              <ul class="dropdown-menu mx-2 pt-3" style="display: block !important;width: 95%; border: none; " >
+                  <li class="dropdown-item " href="#">DASHBOARD</li>
+                  <li class="dropdown-item" > CONTENT <i style="float: right;" class="fas fa-chevron-down"></i>
+                    
+                    
+                  </li>
+                  <li class="dropdown-item" href="#">USERS <i style="float: right;" class="fas fa-chevron-down"></i></li>
+                  <li class="dropdown-item" href="#">REPORTS <i style="float: right;" class="fas fa-chevron-down"></i></li>
+                  <li class="dropdown-item" href="#">ADMIN <i style="float: right;" class="fas fa-chevron-down"></i></li>
+                  
+                </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -116,23 +567,16 @@
 
     <div
       class="container-fluid form-container mt-2"
-      style="
-        background-color: #ffffff;
-        opacity: 100%;
-        padding-left: 0px;
-        
-      "
+      style="background-color: #ffffff; opacity: 100%; padding-left: 0px"
     >
       <div class="row text-center pt-2" style="background-color: #8ddc97">
-        <div class="col" style=" border-bottom: solid 4px black">
-          <i class="fas fa-book"
-            ><span >
-              4 Courses</span
-            >
-          </i>
+        <div class="col" style="border-bottom: solid 4px black">
+          <i class="fas fa-book"><span> 4 Courses</span> </i>
         </div>
 
-        <div class="col"><i class="fas fa-user-friends"> <span> 4 Classes</span> </i></div>
+        <div class="col">
+          <i class="fas fa-user-friends"> <span> 4 Classes</span> </i>
+        </div>
       </div>
       <div
         class="row"
@@ -165,13 +609,13 @@
           </select>
           <i class="fas fa-arrow-up m-2" style="color: #1f7a54"></i>
         </div>
-        
-      <hr >
+
+        <hr />
       </div>
-      <div class="row card-container" style=" background-color: #eeeeee">
+      <div class="row card-container" style="background-color: #eeeeee">
         <!-- Card-1 -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-2 mr-2 px-4">
-          <div class="card cards" >
+          <div class="card cards">
             <div class="card-horizontal">
               <div class="img-square-wrapper m-3">
                 <img
@@ -238,7 +682,7 @@
         </div>
         <!-- Card-2 -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mr-2 px-4">
-          <div class="card cards" >
+          <div class="card cards">
             <div class="card-horizontal">
               <div class="img-square-wrapper m-3">
                 <img
@@ -276,24 +720,25 @@
                 <div class="row mt-2" style="font-size: 14px">
                   <select
                     style="
-                    color: #616161;
+                      color: #616161;
                       border: none;
                       width: 264px;
                       border-bottom: solid 1px black;
                     "
                   >
-                    <option><span style="color: #616161;">No Classes</span> </option>
+                    <option>
+                      <span style="color: #616161">No Classes</span>
+                    </option>
                     <option>All classes</option>
                   </select>
                 </div>
-               
               </div>
             </div>
             <div class="card-footer" style="background-color: #ffffff">
               <div class="d-flex" style="justify-content: space-between">
                 <i class="fas fa-eye"></i>
-                <i style="color: #616161;" class="fas fa-calendar-day"></i>
-                <i style="color: #616161;" class="fas fa-shopping-bag"></i>
+                <i style="color: #616161" class="fas fa-calendar-day"></i>
+                <i style="color: #616161" class="fas fa-shopping-bag"></i>
                 <i class="fas fa-chart-bar"></i>
               </div>
             </div>
@@ -303,7 +748,7 @@
       <div class="row pt-2 card-container" style="background-color: #eeeeee">
         <!-- Card-3 -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-2 mr-2 px-4">
-          <div class="card cards" >
+          <div class="card cards">
             <div class="card-horizontal">
               <div class="img-square-wrapper m-3">
                 <img
@@ -359,9 +804,9 @@
             </div>
             <div class="card-footer" style="background-color: #ffffff">
               <div class="d-flex" style="justify-content: space-between">
-                <i  class="fas fa-eye"></i>
-                <i style="color: #616161;" class="fas fa-calendar-day"></i>
-                <i style="color: #616161;" class="fas fa-shopping-bag"></i>
+                <i class="fas fa-eye"></i>
+                <i style="color: #616161" class="fas fa-calendar-day"></i>
+                <i style="color: #616161" class="fas fa-shopping-bag"></i>
                 <i class="fas fa-chart-bar"></i>
               </div>
             </div>
@@ -369,7 +814,7 @@
         </div>
         <!-- Card-4 -->
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 mr-2 px-4">
-          <div class="card cards" >
+          <div class="card cards">
             <div
               class="justify-content-center d-flex"
               role="alert"
@@ -450,13 +895,16 @@
         </div>
       </div>
     </div>
-    <div class="container mt-3 mb-5 text-center"><a href="" style="color: #1F7A54;">About US</a>  | <a style="color: #1F7A54;" href=""> Contact Us</a> </div>
+    <div class="container mt-3 mb-5 text-center">
+      <a href="" style="color: #1f7a54">About US</a> |
+      <a style="color: #1f7a54" href=""> Contact Us</a>
+    </div>
     <footer
       class="fixed-bottom"
       style="background: #e0e1e1 0% 0% no-repeat padding-box"
     >
       <div class="d-flex justify-content-center">
-        <i style="color: #edc900;" class="p-2  fas fa-lightbulb"></i>
+        <i style="color: #edc900" class="p-2 fas fa-lightbulb"></i>
         <div class="p-2">Quantum</div>
         <div class="p-2">|</div>
         <div class="p-2 mt-1" style="color: #616161; font-size: 12px">
