@@ -130,34 +130,27 @@ span.num3{
   position: sticky;
   background: #fff;
   z-index: 10;
-  top:490px;
-  left: 110px;
-  width: 308px;
+  bottom: 0px;
+  
 }
 .fixed2 {
   position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
-  top:500px;
-  left: 1038px;
- width: 308px;
+  bottom: 0px;
 }
 
 .fixed3 {
   position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
-  top:475px;
-  left: 1098px;
- width: 308px;
+bottom: 0px;
 }
 .fixed4 {
   position: sticky;
   background: rgb(255, 255, 255);
   z-index: 100;
-  top:475px;
-  left: 140px;
- width: 308px;
+  bottom: 0px;
 }
 .dropdown-content-menu {
   height: 200px;
@@ -243,3 +236,14 @@ span.num3{
     
 }
 
+@media only screen and (min-width:892px){
+  .absolutediv{
+    flex-wrap: nowrap;
+  }
+  .navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  
+}

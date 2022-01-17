@@ -1,7 +1,6 @@
-const http = require("http");
+
 const express = require("express");
 const app = express();
-const bp = require("body-parser");
 const Pool = require("pg").Pool;
 const pool = new Pool({
   user: "postgres",
@@ -11,11 +10,12 @@ const pool = new Pool({
   port: 5432,
 });
 
-app.use(bp.json());
-app.use(bp.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get("/", (request, response) => {
-  response.json({ info: "Node.js, Express, and Postgres API" });
+app.get("/api/", (request, response) => {
+  
+  response.send("It Works!");
 });
 
 app.post("/api/create/", (req, res) => {
@@ -32,16 +32,16 @@ app.post("/api/create/", (req, res) => {
   );
 });
 app.get("/api/getuser/", (req, res) => {
-    const id = Number(req.params.id);
-  
-    pool.query(`SELECT * FROM userdetails `, (error, results) => {
-      if (error) {
-        throw error;
-      }
-      res.status(200).json(results.rows);
-    });
+
+  pool.query(`SELECT * FROM userdetails `, (error, results) => {
+    if (error) {
+      throw error;
+    }
+    res.status(200).json(results.rows);
   });
+});
 app.get("/api/getuser/:id", (req, res) => {
+  
   const id = Number(req.params.id);
 
   pool.query(`SELECT * FROM userdetails where id = ${id}`, (error, results) => {
@@ -52,31 +52,33 @@ app.get("/api/getuser/:id", (req, res) => {
   });
 });
 app.delete("/api/delete/:id", (req, res) => {
-    const id = parseInt(req.params.id)
+  const id = parseInt(req.params.id);
 
-    pool.query('DELETE FROM userdetails WHERE id = $1', [id], (error, results) => {
+  pool.query(
+    "DELETE FROM userdetails WHERE id = $1",
+    [id],
+    (error, results) => {
       if (error) {
-        throw error
+        throw error;
       }
-      res.status(200).send(`User deleted with ID: ${id}`)
-    })
-
+      res.status(200).send(`User deleted with ID: ${id}`);
+    }
+  );
 });
 app.put("/api/update/:id", (req, res) => {
-    const id = parseInt(req.params.id)
-    const { name, age } = req.body
-  
-    pool.query(
-      'UPDATE userdetails SET name = $1, age = $2 WHERE id = $3',
-      [name, age, id],
-      (error, results) => {
-        if (error) {
-          throw error
-        }
-        res.status(200).send(`User modified with ID: ${id}`)
-      }
-    )
+  const id = parseInt(req.params.id);
+  const { name, age } = req.body;
 
+  pool.query(
+    "UPDATE userdetails SET name = $1, age = $2 WHERE id = $3",
+    [name, age, id],
+    (error, results) => {
+      if (error) {
+        throw error;
+      }
+      res.status(200).send(`User modified with ID: ${id}`);
+    }
+  );
 });
 app.listen(3000, () => {
   console.log("App running on port 3000.");
