@@ -1,0 +1,111 @@
+{
+    "metadata": {
+        "version": "2"
+    },
+    "content": [
+        {
+            "elementType": "blockHeading",
+            "headingLevel": 1,
+            "heading": "Change Default Location",
+            "description": "Your current default location will be shown .As you change any selection , more choiches will appear.Once you have specified a valid location, a Save button will appear with which you can  save your  new default",
+            "descriptionFontSize": "large"
+        },
+        {
+            "elementType": "blockHeading",
+            "headingLevel": 5,
+            "heading": "Country",
+            "marginBottom": "0px",
+            "marginTop": "0px"
+        },
+        {
+            "elementType": "dropdown",
+            "title": "United States",
+            "width": "400px",
+            "items": [
+                {
+                    "description": "United States"
+                },
+                {
+                    "description": "India"
+                },
+                {
+                    "description": "Canada"
+                },
+                {
+                    "description": "Australia"
+                }
+            ]
+        },
+         {
+            "elementType": "blockHeading",
+            "headingLevel": 5,
+            "heading": "City",
+            "marginBottom": "0px",
+            "marginTop": "0px"
+        },
+        {
+            "elementType": "dropdown",
+            "title": "Camridge,MA",
+            "width": "400px",
+            "items": [
+                {
+                    "description": "Camridge,MA"
+                },
+                {
+                    "description": "Las Vegas"
+                }
+            ]
+        },
+         {
+            "elementType": "blockHeading",
+            "headingLevel": 5,
+            "heading": "Building",
+            "marginBottom": "0px",
+            "marginTop": "0px"
+        },
+        {
+            "elementType": "dropdown",
+            "title": "100,CambridgePark Drive(100CPD)",
+            "width": "400px",
+            "items": [
+                {
+                    "description": "100,CambridgePark Drive(100CPD)"
+                }
+            ]
+        },
+         {
+            "elementType": "blockHeading",
+            "headingLevel": 5,
+            "heading": "Floor",
+            "marginBottom": "0px",
+            "marginTop": "0px"
+        },
+        {
+            "elementType": "dropdown",
+            "title": "123",
+            "width": "400px",
+            "items": [
+                {
+                    "description": "123"
+                }
+            ]
+        },
+         {
+            "elementType": "blockHeading",
+            "headingLevel": 5,
+            "heading": "Neighbourhood",
+            "marginBottom": "0px",
+            "marginTop": "0px"
+        },
+        {
+            "elementType": "dropdown",
+            "title": "Operations",
+            "width": "400px",
+            "items": [
+                {
+                    "description": "Operations"
+                }
+            ]
+        }
+    ]
+}
