@@ -235,7 +235,12 @@ bottom: 0px;
     }
     
 }
-
+@media only screen and (max-width:500px){
+  nav{
+    width: 500px !important;
+  }
+  
+}
 @media only screen and (min-width:892px){
   .absolutediv{
     flex-wrap: nowrap;
