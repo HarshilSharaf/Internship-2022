@@ -1,111 +1,217 @@
 {
-    "metadata": {
-        "version": "2"
-    },
-    "content": [
-        {
-            "elementType": "blockHeading",
-            "headingLevel": 1,
-            "heading": "Change Default Location",
-            "description": "Your current default location will be shown .As you change any selection , more choiches will appear.Once you have specified a valid location, a Save button will appear with which you can  save your  new default",
-            "descriptionFontSize": "large"
-        },
-        {
-            "elementType": "blockHeading",
-            "headingLevel": 5,
-            "heading": "Country",
-            "marginBottom": "0px",
-            "marginTop": "0px"
-        },
-        {
-            "elementType": "dropdown",
-            "title": "United States",
-            "width": "400px",
-            "items": [
-                {
-                    "description": "United States"
-                },
-                {
-                    "description": "India"
-                },
-                {
-                    "description": "Canada"
-                },
-                {
-                    "description": "Australia"
-                }
-            ]
-        },
-         {
-            "elementType": "blockHeading",
-            "headingLevel": 5,
-            "heading": "City",
-            "marginBottom": "0px",
-            "marginTop": "0px"
-        },
-        {
-            "elementType": "dropdown",
-            "title": "Camridge,MA",
-            "width": "400px",
-            "items": [
-                {
-                    "description": "Camridge,MA"
-                },
-                {
-                    "description": "Las Vegas"
-                }
-            ]
-        },
-         {
-            "elementType": "blockHeading",
-            "headingLevel": 5,
-            "heading": "Building",
-            "marginBottom": "0px",
-            "marginTop": "0px"
-        },
-        {
-            "elementType": "dropdown",
-            "title": "100,CambridgePark Drive(100CPD)",
-            "width": "400px",
-            "items": [
-                {
-                    "description": "100,CambridgePark Drive(100CPD)"
-                }
-            ]
-        },
-         {
-            "elementType": "blockHeading",
-            "headingLevel": 5,
-            "heading": "Floor",
-            "marginBottom": "0px",
-            "marginTop": "0px"
-        },
-        {
-            "elementType": "dropdown",
-            "title": "123",
-            "width": "400px",
-            "items": [
-                {
-                    "description": "123"
-                }
-            ]
-        },
-         {
-            "elementType": "blockHeading",
-            "headingLevel": 5,
-            "heading": "Neighbourhood",
-            "marginBottom": "0px",
-            "marginTop": "0px"
-        },
-        {
-            "elementType": "dropdown",
-            "title": "Operations",
-            "width": "400px",
-            "items": [
-                {
-                    "description": "Operations"
-                }
-            ]
-        }
-    ]
+  "metadata": {
+      "version": "2"
+  },
+  "content": [
+      {
+          "elementType": "blockHeading",
+          "headingLevel": 1,
+          "heading": "Change Default Location",
+          "description": "Your current default location will be shown .As you change any selection , more choiches will appear.Once you have specified a valid location, a Save button will appear with which you can  save your  new default",
+          "descriptionFontSize": "large"
+      },
+      {
+          "elementType": "form",
+          "relativePath": "",
+          "items": [
+              {
+                  "elementType": "input",
+                  "inputType": "select",
+                  "name": "country",
+                  "value": "United States",
+                  "label": "Country",
+                  "optionLabels": [
+                      "United States",
+                      "India"
+                  ],
+                  "optionValues": [
+                      "United States",
+                      "India"
+                  ],
+                  "progressiveDisclosureItems": {
+                      "United States": [
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "city",
+                              "value": "Cambridge&#44;MA",
+                              "label": "City",
+                              "optionLabels": [
+                                  "Cambridge&#44;MA",
+                                  "Las Vegas&#44;NV"
+                              ],
+                              "optionValues": [
+                                  "Cambridge",
+                                  "Las Vegas"
+                              ],
+                              "progressiveDisclosureItems":{
+                                "Cambridge" :[{
+                                  "elementType": "input",
+                                  "inputType": "select",
+                                  "name": "Building",
+                                  "value": "100 Cambridgepark Drive (100CPD",
+                                  "label": "Building",
+                                  "optionLabels": [
+                                      "100 Cambridgepark Drive (100CPD)"
+                                  ],
+                                  "optionValues": [
+                                      "100 Cambridgepark Drive (100CPD)"
+                                  ]
+                              }],
+                              "Las Vegas":[{  "elementType": "input",
+                                "inputType": "select",
+                                "name": "Building",
+                                "value": "100 Las Vegas Park",
+                                "label": "Building",
+                                "optionLabels": [
+                                    "100 Las Vegas Park"
+                                ],
+                                "optionValues": [
+                                    "100 Las Vegas Park"
+                                ]}]
+
+
+                              }
+                          },
+                          
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "Floor",
+                              "value": "123",
+                              "label": "Floor",
+                              "optionLabels": [
+                                  "123",
+                                  "122",
+                                  "100"
+                              ],
+                              "optionValues": [
+                                  "123",
+                                  "122",
+                                  "100"
+                              ]
+                          },
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "Neighbourhood",
+                              "value": "Operations",
+                              "label": "Neighbourhood",
+                              "optionLabels": [
+                                  "Operations"
+                              ],
+                              "optionValues": [
+                                  "Operations"
+                              ]
+                          }
+                      ],
+                      "India": [
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "city",
+                              "value": "Mumbai",
+                              "label": "City",
+                              "optionLabels": [
+                                  "Mumbai",
+                                  "Pune"
+                              ],
+                              "optionValues": [
+                                  "Mumbai",
+                                  "Pune"
+                              ],
+
+                              "progressiveDisclosureItems":{
+
+                                "Mumbai" : [{
+                                  "elementType": "input",
+                                  "inputType": "select",
+                                  "name": "Building",
+                                  "value": "100 Lower Parel",
+                                  "label": "Building",
+                                  "optionLabels": [
+                                      "100 Lower Parel"
+                                  ],
+                                  "optionValues": [
+                                      "100 Lower Parel"
+                                  ]
+                              }],
+                              "Pune" : [
+                                {"elementType": "input",
+                                "inputType": "select",
+                                "name": "Building",
+                                "value": "100 Lower Pune",
+                                "label": "Building",
+                                "optionLabels": [
+                                    "100 Lower Pune"
+                                ],
+                                "optionValues": [
+                                    "100 Lower Pune"
+                                ]}]
+                                }
+                          },
+                          
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "Floor",
+                              "value": "123",
+                              "label": "Floor",
+                              "optionLabels": [
+                                  "123",
+                                  "122",
+                                  "100"
+                              ],
+                              "optionValues": [
+                                  "123",
+                                  "122",
+                                  "100"
+                              ]
+                          },
+                          {
+                              "elementType": "input",
+                              "inputType": "select",
+                              "name": "Neighbourhood",
+                              "value": "Operations",
+                              "label": "Neighbourhood",
+                              "optionLabels": [
+                                  "Operations"
+                              ],
+                              "optionValues": [
+                                  "Operations"
+                              ]
+                          }
+                      ]
+                  }
+              }
+          ]
+      },
+      {
+          "elementType": "container",
+          "marginTop": "10px",
+          "content": [
+              {
+                  "elementType": "buttonContainer",
+                  "horizontalAlignment": "right",
+                  "buttons": [
+                      {
+                          "elementType": "linkButton",
+                          "title": "Cancel",
+                          "link": {
+                              "relativePath": ""
+                          }
+                      },
+                      {
+                          "elementType": "linkButton",
+                          "title": "Save",
+                          "actionStyle": "constructive",
+                          "link": {
+                              "relativePath": ""
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
 }
